@@ -1,0 +1,16 @@
+import random
+
+
+print('Hello, word')
+
+
+simvoli = ('+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
+
+length = int(input('Какую длину пароля хочешь?'))
+
+password = ''
+
+
+for i in range(length):
+    password = random.choice(simvoli)
+    print(password,end='')
